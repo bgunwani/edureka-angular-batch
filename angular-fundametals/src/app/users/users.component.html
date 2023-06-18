@@ -1,0 +1,54 @@
+<h2>List of Projects</h2>
+<ul *ngFor="let project of projects">
+    <li>{{project}}</li>
+</ul>
+
+<!-- <hr /> -->
+
+<!-- <h2>List of Users</h2>
+<ul *ngFor="let user of users">
+    <li>{{user.userId}} : {{user.userName}} :{{user.userAge}}</li>
+</ul> -->
+
+<!-- <hr /> -->
+
+<!-- <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>S.No.</th>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>User Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{user.userId}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.userAge}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+<!-- <hr /> -->
+
+<!-- <ng-template ngFor let-user [ngForOf]="users" let-i="index">
+    <div>{{i+1}} : {{user.userId}} : {{user.userName}} :{{user.userAge}}</div>
+</ng-template> -->
+
+<hr />
+
+<!-- <div *ngIf="isLoggedIn">
+    Welcome User.
+</div>
+<div *ngIf="!isLoggedIn">
+    Please Login First.
+</div> -->
+
+<ng-template *ngIf="isLoggedIn; else isLoggedOut">
+    Welcome User
+</ng-template>
+<ng-template #isLoggedOut>
+    Please Login First.
+</ng-template>
