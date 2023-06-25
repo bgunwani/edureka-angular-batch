@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1001,
+      "name": "King Kochhar",
+      "salary": 12000,
+      "designation": "Manager"
+    },
+    {
+      "id": 1002,
+      "name": "Sarah Bowling",
+      "salary": 32000,
+      "designation": "Developer"
+    },
+    {
+      "id": 1003,
+      "name": "John Smith",
+      "salary": 20000,
+      "designation": "Administrator"
+    },
+    {
+      "name": "Bhawna Gunwani",
+      "salary": 42000,
+      "designation": "Tester",
+      "id": 1004
+    }
+  ]
+}
