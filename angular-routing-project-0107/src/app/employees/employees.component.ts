@@ -14,8 +14,7 @@ export class EmployeesComponent {
   constructor(private _httpClient: HttpClient) { }
 
   ngOnInit() {
-    this._httpClient.get<Employee[]>
-      ('http://localhost:3000/employees')
+    this._httpClient.get<Employee[]>('http://localhost:3000/employees')
       .subscribe((result) => {
         this.employees = result;
         console.log(this.employees);
