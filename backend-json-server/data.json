@@ -3,7 +3,7 @@
     {
       "name": "John Smith New",
       "salary": "50000",
-      "designation": "Tester",
+      "designation": "Testing Team",
       "id": 1003
     },
     {
@@ -17,18 +17,32 @@
       "salary": "23000",
       "designation": "Manager",
       "id": 1005
-    },
+    }
+  ],
+  "users": [
     {
-      "name": "Shreya Sharma",
-      "salary": "20000",
-      "designation": "Sr. Manager",
-      "id": 1006
-    },
-    {
+      "id": 5001,
       "name": "Bhawna Gunwani",
-      "salary": "10000",
-      "designation": "Developer",
-      "id": 1007
+      "username": "bhawnagunwani",
+      "password": "123456",
+      "email": "bhawna@gmail.com",
+      "contactNumber": 1234567890
+    },
+    {
+      "id": 5002,
+      "name": "Sarah Bowling",
+      "username": "sarahbowling",
+      "password": "123456",
+      "email": "sarah@gmail.com",
+      "contactNumber": 1234567890
+    },
+    {
+      "id": 5003,
+      "name": "King Kochhar",
+      "username": "kingkochhar",
+      "password": "123456",
+      "email": "king@gmail.com",
+      "contactNumber": 1234567890
     }
   ]
 }
