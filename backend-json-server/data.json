@@ -1,12 +1,6 @@
 {
   "employees": [
     {
-      "name": "John Smith New",
-      "salary": "50000",
-      "designation": "Testing Team",
-      "id": 1003
-    },
-    {
       "name": "Bhawna Gunwani",
       "salary": 42000,
       "designation": "Tester",
@@ -20,14 +14,6 @@
     }
   ],
   "users": [
-    {
-      "id": 5001,
-      "name": "Bhawna Gunwani",
-      "username": "bhawnagunwani",
-      "password": "123456",
-      "email": "bhawna@gmail.com",
-      "contactNumber": 1234567890
-    },
     {
       "id": 5002,
       "name": "Sarah Bowling",
