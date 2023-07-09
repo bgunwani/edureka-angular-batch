@@ -1,0 +1,49 @@
+<p>users works!</p>
+
+<!-- <h3>Text Pipes</h3>
+<p>First Name: {{userObj.firstName | uppercase }}</p>
+<p>Last Name: {{userObj.lastName | lowercase }}</p>
+<p>Full Name: {{ userObj.firstName + ' ' + userObj.lastName | titlecase }}</p> -->
+
+<!-- <h3>Number Pipes</h3>
+<p>Salary: {{userObj.salary}}</p>
+<p>Salary: {{userObj.salary | number}}</p>
+<p>Salary: {{userObj.salary | number: '7.1-5'}}</p>
+<p>Salary: {{userObj.salary | number: '7.1-5'}}</p>
+<p>Salary: {{userObj.salary | number: '4.1-5'}}</p> -->
+
+<!-- <h3>Currency Pipes</h3>
+<p>Salary: {{userObj.salary}}</p>
+<p>Salary: {{userObj.salary | currency}}</p>
+<p>Salary: {{userObj.salary | currency: 'INR'}}</p>
+<p>Salary: {{userObj.salary | currency: 'INR':'code'}}</p>
+<p>Salary: {{userObj.salary | currency: 'INR':'symbol'}}</p> -->
+
+<!-- <h3>Date Pipes</h3>
+<p>Current Date: {{ userObj.currentDate }}</p>
+<p>Current Date: {{ userObj.currentDate | date }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'short' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'medium' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'long' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'full' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'shortDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'mediumDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'longDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'fullDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'shortTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'mediumTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'longTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'fullTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'dd-MMMM-YYYY' }}</p> -->
+
+<!-- <h3>Json Pipes</h3>
+<pre>User Details: {{ userObj | json }}</pre> -->
+
+<h3>Custom Pipes</h3>
+<p>{{userObj.firstName | welcome }}</p>
+<p>{{userObj.firstName + ' ' + userObj.lastName | welcome }}</p>
+<p>{{userObj.firstName + ' ' + userObj.lastName | welcome | uppercase }}</p>
+
+<p>{{userObj.firstName | greeting: 'Hi' }}</p>
+<p>{{userObj.firstName | greeting: 'Hello' }}</p>
+<p>{{userObj.firstName | greeting: 'Welcome' }}</p>
