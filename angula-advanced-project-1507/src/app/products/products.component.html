@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <select class="form-select" [(ngModel)]="order">
+                    <option value="name">Name</option>
+                    <option value="brand">brand</option>
+                    <option value="price">price</option>
+                </select>
+            </div>
+
+            <hr />
+
+            <h4>Product Items</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>{{product.name}}</td>
+                        <td>{{product.brand}}</td>
+                        <td>{{product.price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

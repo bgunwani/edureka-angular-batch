@@ -1,0 +1,118 @@
+<p>users works!</p>
+
+<!-- <h3>Text Pipes</h3>
+<p>First Name: {{userObj.firstName | uppercase }}</p>
+<p>Last Name: {{userObj.lastName | lowercase }}</p>
+<p>Full Name: {{ userObj.firstName + ' ' + userObj.lastName | titlecase }}</p> -->
+
+<!-- <h3>Number Pipes</h3>
+<p>Salary: {{userObj.salary}}</p>
+<p>Salary: {{userObj.salary | number}}</p>
+<p>Salary: {{userObj.salary | number: '7.1-5'}}</p>
+<p>Salary: {{userObj.salary | number: '7.1-5'}}</p>
+<p>Salary: {{userObj.salary | number: '4.1-5'}}</p> -->
+
+<!-- <h3>Currency Pipes</h3>
+<p>Salary: {{userObj.salary}}</p>
+<p>Salary: {{userObj.salary | currency}}</p>
+<p>Salary: {{userObj.salary | currency: 'INR'}}</p>
+<p>Salary: {{userObj.salary | currency: 'INR':'code'}}</p>
+<p>Salary: {{userObj.salary | currency: 'INR':'symbol'}}</p> -->
+
+<!-- <h3>Date Pipes</h3>
+<p>Current Date: {{ userObj.currentDate }}</p>
+<p>Current Date: {{ userObj.currentDate | date }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'short' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'medium' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'long' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'full' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'shortDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'mediumDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'longDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'fullDate' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'shortTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'mediumTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'longTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'fullTime' }}</p>
+<p>Current Date: {{ userObj.currentDate | date:'dd-MMMM-YYYY' }}</p> -->
+
+<!-- <h3>Json Pipes</h3>
+<pre>User Details: {{ userObj | json }}</pre> -->
+
+<!-- <h3>Custom Pipes</h3>
+<p>{{userObj.firstName | welcome }}</p>
+<p>{{userObj.firstName + ' ' + userObj.lastName | welcome }}</p>
+<p>{{userObj.firstName + ' ' + userObj.lastName | welcome | uppercase }}</p>
+
+<p>{{userObj.firstName | greeting: 'Hi' }}</p>
+<p>{{userObj.firstName | greeting: 'Hello' }}</p>
+<p>{{userObj.firstName | greeting: 'Welcome' }}</p> -->
+
+<!-- <p><input type="text" [(ngModel)]="value" class="form-control"></p>
+
+<div [ngSwitch]="value">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">Two</div>
+    <div *ngSwitchCase="3">Three</div>
+    <div *ngSwitchCase="4">Four</div>
+    <div *ngSwitchDefault>Invalid Value!!</div>
+</div> -->
+
+<!-- ************************************************* -->
+
+<!-- <div class="alert alert-success">Something Important Message Here..</div>
+
+<div class="div1">Something Important Message Here Again..</div>
+
+<hr />
+<div [ngStyle]="{'color':'red', 'background-color':'navy', 'padding': '10px'}">Very Important Message Here..</div>
+
+<hr />
+
+<div class="div1" [ngStyle]="{'font-weight': 'bold'}">Something written here.</div>
+
+<hr />
+
+<p [ngStyle]="addCSSStyles()">This is styled paragraph.</p>
+
+<p class="para">This is first paragraph.</p>
+
+<hr />
+
+<div *ngFor="let user of usersList">
+    <span [ngStyle]="{'background-color': user.Gender == 'Male' ? 'lightgrey': 'green'}">
+        Name: {{user.Name}}, Age:
+        {{user.Age}}, Gender:
+        {{user.Gender}}</span>
+</div> -->
+
+<!-- ************************************************* -->
+
+<!-- <h3 [ngClass]="'style_one'">Demonstrating Attribute Directives</h3>
+
+<h3 [ngClass]="'style_one style_five'">Demonstrating Attribute Directives</h3>
+
+<h3 [ngClass]="['style_one', 'style_two', 'style_three']">Demonstrating Attribute Directives</h3>
+
+<h3 [ngClass]="{'style_one': true, 'style_five': false, 'style_four': true}">Demonstrating Attribute Directives</h3>
+
+<h3 [ngClass]="addCssClasses('Type 2')">Demonstrating Attribute Directives</h3> -->
+
+<!-- ************************************************* -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th highlightText>User Name</th>
+            <th highlightText>User Age</th>
+            <th highlightText>User Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of usersList">
+            <td>{{user.Name}}</td>
+            <td>{{user.Age}}</td>
+            <td>{{user.Gender}}</td>
+        </tr>
+    </tbody>
+</table>
