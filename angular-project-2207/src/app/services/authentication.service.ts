@@ -39,7 +39,7 @@ export class AuthenticationService {
     this._router.navigate(['']);
   }
 
-  public get loggedIn(): boolean {
+  loggedIn(): boolean {
     return (localStorage.getItem('username') != null);
   }
 

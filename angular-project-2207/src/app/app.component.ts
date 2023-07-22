@@ -8,11 +8,16 @@ import { AuthenticationService } from './services/authentication.service';
 })
 export class AppComponent {
 
-  constructor(private _authenticationService: AuthenticationService) { }
+  isLoggedIn!: boolean;
+
+  constructor(private _authenticationService: AuthenticationService) {
+    this.isLoggedIn = this._authenticationService.loggedIn();
+    console.log(this.isLoggedIn);
+  }
+
+  ngOnInit() { }
 
   logout() {
     this._authenticationService.logout();
   }
-
-  title = 'angular-project-2207';
 }
