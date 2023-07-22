@@ -1,0 +1,33 @@
+.div1 {
+    width: auto;
+    height: 50px;
+    background-color: pink;
+    padding: 10px;
+}
+
+/* .para {
+    font-family: fantasy;
+    padding: 10px;
+    font-style: italic;
+    color: navy;
+} */
+
+.style_one {
+    color: red;
+}
+
+.style_two {
+    font-weight: bold;
+}
+
+.style_three {
+    text-decoration: underline;
+}
+
+.style_four {
+    font-size: 30px;
+}
+
+.style_five {
+    color: green
+}

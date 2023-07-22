@@ -1,0 +1,6 @@
+<h3>Parent Component</h3>
+<input type="string" #pcomponent (keyup)="0" />
+
+<p>Value of child component is : {{CData}}</p>
+
+<app-child [PData]="pcomponent.value" (childEvent)="CData=$event"></app-child>
